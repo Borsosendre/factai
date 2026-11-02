@@ -1,0 +1,153 @@
+{
+  "config": {
+    "contact_email": "",
+    "base_url": "",
+    "irf_url": "https://interregioforum.hu/",
+    "partners": [
+      {"id": "ami", "abbr": "AMI", "url": ""},
+      {"id": "irf", "abbr": "IRF", "url": "https://interregioforum.hu/"},
+      {"id": "ffp", "abbr": "FFP", "url": "https://focusforpartnerships.eu/"}
+    ]
+  },
+  "en": {
+    "lang_name": "English",
+    "meta_title": "FACT.AI | Real stories. Checked facts.",
+    "meta_desc": "FACT.AI is a youth project for Hungarian and Romanian communities: learn to use AI critically and turn real, positive experiences between communities into checked stories.",
+    "skip": "Skip to content",
+    "lang_label": "Language",
+    "nav": {"about": "Project", "how": "Steps", "news": "News", "partners": "Partners", "join": "Take part"},
+    "hero_a": "Real stories.",
+    "hero_b": "Checked facts.",
+    "hero_lead": "FACT.AI helps youth workers in Hungarian and Romanian communities use AI critically, and turn real, positive experiences between the two communities into stories that counter misinformation and ethnic stereotypes.",
+    "hero_note": "People check every story before it is published.",
+    "cta_news": "Read the news",
+    "cta_join": "Take part",
+    "about_h": "AI can spread a stereotype faster than anyone can correct it.",
+    "about_p1": "Misinformation about Hungarians and Romanians travels fast, and AI tools can make it travel faster. FACT.AI works the other way.",
+    "about_p2": "Youth workers learn to question what AI produces. Then they write stories from experiences they had themselves, with people from the other community. Real people, with their consent, tell those stories to young people in both communities.",
+    "about_list": [
+      "An online course in Hungarian, Romanian and English.",
+      "Two three-day meetings: Miercurea Ciuc and Budapest.",
+      "An eight-week TikTok and Instagram campaign."
+    ],
+    "how_h": "How it works",
+    "steps": [
+      {"t": "Learn", "p": "A short online course on media literacy and responsible use of AI, in Hungarian, Romanian and English."},
+      {"t": "Create together", "p": "Two three-day meetings, in Miercurea Ciuc and Budapest, where participants make the stories together."},
+      {"t": "Check", "p": "People check every story: the facts, the sources, the translation, and the consent of everyone who appears in it."},
+      {"t": "Share", "p": "An eight-week TikTok and Instagram campaign takes the stories to young people in both communities."}
+    ],
+    "news_h": "News",
+    "news_more": "Older news",
+    "news_read": "Read more",
+    "news_empty": "No news yet.",
+    "partners_h": "Three organisations, one project",
+    "partners": {
+      "ami": {"name": "Asociația Mergem Înainte (AMI)", "role": "Coordinator. Based in Miercurea Ciuc, Romania."},
+      "irf": {"name": "InterRegio Forum Association (IRF)", "role": "Technical and content lead: the course and the learning platform. Based in Budapest, Hungary."},
+      "ffp": {"name": "Focus for Partnership (FFP)", "role": "Community and campaign lead. Based in Bălan, Romania."}
+    },
+    "logo_missing": "Logo to be added",
+    "join_h": "Take part",
+    "join_badge": "The call opens soon",
+    "join_p": "We are preparing the call for youth workers from Hungarian and Romanian communities. Conditions and dates are not final, so we do not publish them yet.",
+    "join_contact": "Questions? Write to",
+    "eu_missing": "EU emblem to be added",
+    "disclaimer": "Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or Agenția Națională pentru Programe Comunitare în Domeniul Educației și Formării Profesionale (ANPCDEFP). Neither the European Union nor the granting authority can be held responsible for them.",
+    "date_fmt": "en"
+  },
+  "hu": {
+    "lang_name": "Magyar",
+    "meta_title": "FACT.AI | Valódi történetek. Ellenőrzött tények.",
+    "meta_desc": "A FACT.AI ifjúsági projekt magyar és román közösségeknek: megtanulni kritikusan használni az AI-t, és a közösségek közti valódi, pozitív tapasztalatokból ellenőrzött történeteket készíteni.",
+    "skip": "Ugrás a tartalomhoz",
+    "lang_label": "Nyelv",
+    "nav": {"about": "Projekt", "how": "Lépések", "news": "Hírek", "partners": "Partnerek", "join": "Csatlakozz"},
+    "hero_a": "Valódi történetek.",
+    "hero_b": "Ellenőrzött tények.",
+    "hero_lead": "A FACT.AI segít magyar és román közösségben dolgozó ifjúsági munkásoknak abban, hogy kritikusan használják a mesterséges intelligenciát, és a két közösség közti valódi, pozitív tapasztalatokból olyan történeteket hozzanak létre, amelyek a félrevezető információkkal és az etnikai sztereotípiákkal szállnak szembe.",
+    "hero_note": "Minden történetet emberek ellenőriznek, mielőtt megjelenik.",
+    "cta_news": "Hírek",
+    "cta_join": "Csatlakozz",
+    "about_h": "Az AI gyorsabban terjeszt egy sztereotípiát, mint ahogy bárki helyre tudná igazítani.",
+    "about_p1": "A magyarokról és a románokról szóló téves információk gyorsan terjednek, az AI-eszközök pedig még gyorsabbá tehetik ezt. A FACT.AI az ellenkező irányba dolgozik.",
+    "about_p2": "Az ifjúsági munkások megtanulják megkérdőjelezni, amit az AI létrehoz. Utána olyan történeteket írnak, amelyeket ők maguk éltek át a másik közösség tagjaival. Valódi emberek mesélik el ezeket a hozzájárulásukkal, mindkét közösség fiataljainak.",
+    "about_list": [
+      "Online tanfolyam magyarul, románul és angolul.",
+      "Két háromnapos találkozó: Csíkszereda és Budapest.",
+      "Nyolchetes TikTok- és Instagram-kampány."
+    ],
+    "how_h": "Hogyan működik",
+    "steps": [
+      {"t": "Tanulás", "p": "Rövid online tanfolyam a médiaértésről és az AI felelős használatáról, magyarul, románul és angolul."},
+      {"t": "Közös alkotás", "p": "Két háromnapos találkozó Csíkszeredán és Budapesten, ahol a résztvevők közösen készítik a történeteket."},
+      {"t": "Ellenőrzés", "p": "Minden történetet emberek ellenőriznek: a tényeket, a forrásokat, a fordítást, és azt, hogy mindenki beleegyezett, aki szerepel benne."},
+      {"t": "Megosztás", "p": "Nyolchetes TikTok- és Instagram-kampány viszi a történeteket mindkét közösség fiataljaihoz."}
+    ],
+    "news_h": "Hírek",
+    "news_more": "Régebbi hírek",
+    "news_read": "Tovább",
+    "news_empty": "Még nincs hír.",
+    "partners_h": "Három szervezet, egy projekt",
+    "partners": {
+      "ami": {"name": "Asociația Mergem Înainte (AMI)", "role": "Koordinátor. Székhelye Csíkszereda, Románia."},
+      "irf": {"name": "InterRegio Forum Egyesület (IRF)", "role": "Műszaki és tartalmi vezető: a tanfolyam és a tanulási platform. Székhelye Budapest."},
+      "ffp": {"name": "Focus for Partnership (FFP)", "role": "Közösségi és kampányvezető. Székhelye Balánbánya, Románia."}
+    },
+    "logo_missing": "A logó hamarosan kerül ide",
+    "join_h": "Csatlakozz",
+    "join_badge": "A felhívás hamarosan indul",
+    "join_p": "Készítjük a felhívást magyar és román közösségben dolgozó ifjúsági munkásoknak. A feltételek és a dátumok még nem véglegesek, ezért egyelőre nem közöljük őket.",
+    "join_contact": "Kérdésed van? Írj ide:",
+    "eu_missing": "Az EU-embléma hamarosan kerül ide",
+    "disclaimer": "Az Európai Unió finanszírozásával. Az itt szereplő információk és állítások a szerző(k) álláspontját képviselik, és nem feltétlenül tükrözik az Európai Unió vagy az ANPCDEFP (Agenția Națională pentru Programe Comunitare în Domeniul Educației și Formării Profesionale) hivatalos véleményét. Sem az Európai Unió, sem a támogatást nyújtó hatóság nem vonható felelősségre miattuk.",
+    "date_fmt": "hu"
+  },
+  "ro": {
+    "lang_name": "Română",
+    "meta_title": "FACT.AI | Povești reale. Fapte verificate.",
+    "meta_desc": "FACT.AI este un proiect pentru tineri din comunitățile maghiară și română: învățăm să folosim critic AI și transformăm experiențele reale, pozitive, dintre comunități în povești verificate.",
+    "skip": "Treci la conținut",
+    "lang_label": "Limba",
+    "nav": {"about": "Proiect", "how": "Pași", "news": "Noutăți", "partners": "Parteneri", "join": "Participă"},
+    "hero_a": "Povești reale.",
+    "hero_b": "Fapte verificate.",
+    "hero_lead": "FACT.AI îi ajută pe lucrătorii de tineret din comunitățile maghiară și română să folosească critic inteligența artificială și să transforme experiențele reale, pozitive, dintre cele două comunități în povești care contracarează dezinformarea și stereotipurile etnice.",
+    "hero_note": "Fiecare poveste este verificată de oameni înainte de publicare.",
+    "cta_news": "Citește noutățile",
+    "cta_join": "Participă",
+    "about_h": "AI poate răspândi un stereotip mai repede decât îl poate corecta cineva.",
+    "about_p1": "Informațiile false despre maghiari și români circulă repede, iar instrumentele AI le pot face să circule și mai repede. FACT.AI lucrează în sens invers.",
+    "about_p2": "Lucrătorii de tineret învață să pună sub semnul întrebării ce produce AI. Apoi scriu povești din experiențe pe care le-au trăit ei înșiși alături de oameni din cealaltă comunitate. Oameni reali, cu acordul lor, le spun aceste povești tinerilor din ambele comunități.",
+    "about_list": [
+      "Curs online în maghiară, română și engleză.",
+      "Două întâlniri de câte trei zile: Miercurea Ciuc și Budapesta.",
+      "O campanie de opt săptămâni pe TikTok și Instagram."
+    ],
+    "how_h": "Cum funcționează",
+    "steps": [
+      {"t": "Învățare", "p": "Un curs online scurt despre educația media și folosirea responsabilă a AI, în maghiară, română și engleză."},
+      {"t": "Creație în comun", "p": "Două întâlniri de trei zile, la Miercurea Ciuc și la Budapesta, unde participanții creează poveștile împreună."},
+      {"t": "Verificare", "p": "Oamenii verifică fiecare poveste: faptele, sursele, traducerea și acordul tuturor celor care apar în ea."},
+      {"t": "Distribuire", "p": "O campanie de opt săptămâni pe TikTok și Instagram duce poveștile la tinerii din ambele comunități."}
+    ],
+    "news_h": "Noutăți",
+    "news_more": "Noutăți mai vechi",
+    "news_read": "Citește mai mult",
+    "news_empty": "Încă nu sunt noutăți.",
+    "partners_h": "Trei organizații, un singur proiect",
+    "partners": {
+      "ami": {"name": "Asociația Mergem Înainte (AMI)", "role": "Coordonator. Cu sediul la Miercurea Ciuc, România."},
+      "irf": {"name": "Asociația InterRegio Forum (IRF)", "role": "Responsabil pentru partea tehnică și de conținut: cursul și platforma de învățare. Cu sediul la Budapesta, Ungaria."},
+      "ffp": {"name": "Focus for Partnership (FFP)", "role": "Responsabil pentru comunitate și campanie. Cu sediul la Bălan, România."}
+    },
+    "logo_missing": "Logoul va fi adăugat",
+    "join_h": "Participă",
+    "join_badge": "Apelul se deschide în curând",
+    "join_p": "Pregătim apelul pentru lucrătorii de tineret din comunitățile maghiară și română. Condițiile și datele nu sunt încă finale, de aceea nu le publicăm deocamdată.",
+    "join_contact": "Ai întrebări? Scrie-ne la",
+    "eu_missing": "Emblema UE va fi adăugată",
+    "disclaimer": "Finanțat de Uniunea Europeană. Punctele de vedere și opiniile exprimate aparțin însă exclusiv autorului (autorilor) și nu reflectă neapărat poziția Uniunii Europene sau a Agenției Naționale pentru Programe Comunitare în Domeniul Educației și Formării Profesionale (ANPCDEFP). Nici Uniunea Europeană, nici autoritatea finanțatoare nu pot fi considerate responsabile pentru acestea.",
+    "date_fmt": "ro"
+  }
+}

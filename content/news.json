@@ -1,0 +1,33 @@
+{
+  "_help": "Newest first is not required: the build sorts by date. Required per item: id, date (YYYY-MM-DD), title and summary in en/hu/ro. Optional: body (paragraphs separated by a blank line), quote {text, who}, image {src, alt{en,hu,ro}}, link {url, label{en,hu,ro}}. A missing language falls back to English.",
+  "items": [
+    {
+      "id": "website-launch",
+      "date": "2026-11-02",
+      "title": {
+        "en": "The FACT.AI website is online",
+        "hu": "Elindult a FACT.AI honlap",
+        "ro": "Site-ul FACT.AI este online"
+      },
+      "summary": {
+        "en": "News, calls and materials from the project will appear here in English, Hungarian and Romanian.",
+        "hu": "A projekt hírei, felhívásai és anyagai itt jelennek meg angolul, magyarul és románul.",
+        "ro": "Noutățile, apelurile și materialele proiectului vor apărea aici, în engleză, maghiară și română."
+      }
+    },
+    {
+      "id": "call-soon",
+      "date": "2026-11-02",
+      "title": {
+        "en": "Call for youth workers: coming soon",
+        "hu": "Felhívás ifjúsági munkásoknak: hamarosan",
+        "ro": "Apel pentru lucrători de tineret: în curând"
+      },
+      "summary": {
+        "en": "We are preparing the call for youth workers from Hungarian and Romanian communities. Conditions and dates will be published here.",
+        "hu": "Készítjük a felhívást magyar és román közösségben dolgozó ifjúsági munkásoknak. A feltételeket és a dátumokat itt tesszük közzé.",
+        "ro": "Pregătim apelul pentru lucrătorii de tineret din comunitățile maghiară și română. Condițiile și datele vor fi publicate aici."
+      }
+    }
+  ]
+}

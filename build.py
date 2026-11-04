@@ -62,6 +62,10 @@ CHECK = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
          'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>')
 
 
+PENCIL = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" '
+          'stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>')
+
+
 def paragraphs(text):
     return "".join(f"<p>{e(p.strip())}</p>" for p in text.split("\n\n") if p.strip())
 
@@ -76,7 +80,7 @@ def news_item(it, lang, t):
         out.append(f'<blockquote class="human"><p>{e(tr(q["text"], lang))}</p><footer>{e(q.get("who", ""))}</footer></blockquote>')
     im = it.get("image")
     if im:
-        out.append(f'<figure><img src="../assets/img/news/{e(im["src"])}" alt="{e(tr(im.get("alt", ""), lang))}" loading="lazy"></figure>')
+        out.append(f'<figure><img src="../assets/img/news/{e(os.path.basename(im["src"]))}" alt="{e(tr(im.get("alt", ""), lang))}" loading="lazy"></figure>')
     if it.get("body"):
         out.append(f'<details class="more"><summary>{e(t["news_read"])}</summary>{paragraphs(tr(it["body"], lang))}</details>')
     lk = it.get("link")
@@ -96,14 +100,16 @@ def partner_card(p, t):
                  f'<span class="tiny">{e(t["logo_missing"])}</span></div>')
     site_link = ""
     if p.get("url"):
-        host = urlparse(p["url"]).netloc.removeprefix("www.")
+        host = urlparse(p["url"]).netloc
+        if host.startswith("www."):
+            host = host[4:]
         site_link = f'<p class="site"><a href="{e(p["url"])}" rel="noopener">{e(host)}</a></p>'
     return f'<li class="partner">{plate}<h3>{e(info["name"])}</h3><p>{e(info["role"])}</p>{site_link}</li>'
 
 
 def page(lang):
     t = site[lang]
-    items = sorted(news, key=lambda x: x["date"], reverse=True)
+    items = sorted((n for n in news if n.get("published", True) is not False), key=lambda x: x["date"], reverse=True)
     shown, older = items[:5], items[5:]
     news_html = "".join(news_item(i, lang, t) for i in shown) or f'<p class="muted">{e(t["news_empty"])}</p>'
     if older:
@@ -211,7 +217,7 @@ def page(lang):
 <section class="sec" id="news">
   <div class="wrap">
     <h2>{e(t["news_h"])}</h2>
-    <div class="news">{news_html}</div>
+    <div class="news"><!--NEWS-->{news_html}<!--/NEWS--></div>
   </div>
 </section>
 
@@ -241,6 +247,7 @@ def page(lang):
       <a class="foot-brand" href="#top" aria-label="FACT.AI"><img src="../assets/img/factai-logo-dark.svg" alt="FACT.AI" width="156" height="38"></a>
     </div>
     <p class="disclaimer">{e(t["disclaimer"])}</p>
+    <p class="foot-admin"><a href="../admin/" rel="nofollow" aria-label="{e(t["admin_label"])}" title="{e(t["admin_label"])}">{PENCIL}</a></p>
   </div>
 </footer>
 </body>
@@ -271,6 +278,13 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir()
     shutil.copytree(ROOT / "static", OUT / "assets")
+    # dashboard (PHP) and live content files; config.php is created on the server and never shipped
+    shutil.copytree(ROOT / "admin", OUT / "admin", ignore=shutil.ignore_patterns("config.php", "__pycache__"))
+    (OUT / "content").mkdir()
+    for f in ("site.json", "news.json"):
+        shutil.copy(ROOT / "content" / f, OUT / "content" / f)
+    (OUT / "assets/img/news").mkdir(parents=True, exist_ok=True)
+    (OUT / "assets/img/news/.gitkeep").write_text("")
     (OUT / "index.html").write_text(ROOT_PAGE, encoding="utf-8")
     for l in LANGS:
         (OUT / l).mkdir()

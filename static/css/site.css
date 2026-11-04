@@ -187,3 +187,7 @@ details.older .news-item:first-of-type { border-top: 1px solid var(--line); }
 .foot-plate.plate-empty { color: var(--band-muted); border-color: rgba(244, 241, 251, .3); }
 .foot-brand img { height: 2.75rem; width: auto; }
 .disclaimer { max-width: 56rem; color: var(--band-muted); font-size: .875rem; line-height: 1.6; margin: 0; }
+.foot-admin { margin: 1.25rem 0 0; }
+.foot-admin a { display: inline-grid; place-items: center; width: 2.5rem; height: 2.5rem; color: var(--band-muted); border: 1px solid rgba(244, 241, 251, .25); border-radius: 8px 0 8px 0; }
+.foot-admin a:hover { color: var(--band-fg); border-color: var(--band-fg); }
+.foot-admin svg { width: 1.1rem; height: 1.1rem; }

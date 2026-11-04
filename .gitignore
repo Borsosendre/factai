@@ -1,3 +1,4 @@
 site/
-preview/
 __pycache__/
+admin/config.php
+_data/

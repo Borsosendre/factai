@@ -36,7 +36,7 @@ server {
     index index.html;
 
     location ^~ /_data/ { deny all; }
-    location ~ ^/admin/(lib|config|config\.sample|create-user|rerender)\.php$ { deny all; }
+    location ~ ^/admin/(lib|config|config\.sample|create-user|rerender|import-feed)\.php$ { deny all; }
     location ~ /\.(?!well-known) { deny all; }
 
     location = /admin/index.php {

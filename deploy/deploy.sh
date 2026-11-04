@@ -25,4 +25,6 @@ chown -R "$WEBUSER": "$TARGET/content" "$TARGET/assets/img/news" "$TARGET/en" "$
 
 # re-apply the live news to the freshly copied pages
 ( cd "$TARGET" && sudo -u "$WEBUSER" php admin/rerender.php 2>/dev/null || php admin/rerender.php )
+# news committed to the repository (content/news-feed.json): merged without overwriting dashboard edits
+( cd "$TARGET" && sudo -u "$WEBUSER" php admin/import-feed.php "$OLDPWD" 2>/dev/null || php admin/import-feed.php "$OLDPWD" )
 echo "Kész: $TARGET"
